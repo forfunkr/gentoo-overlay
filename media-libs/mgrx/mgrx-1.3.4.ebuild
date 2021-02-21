@@ -90,6 +90,19 @@ src_configure() {
 		MAKE_FILE="makefile.lnx"
 	fi
 	sed -i '/STRIP/d' src/${MAKE_FILE}  # remove strip processes, this should be done by emerge
+
+	# FIXME Add library linking info for a mgrx shared library
+	LINK_OPT=""
+	if use jpeg ; then
+		LINK_OPT+=" -ljpeg"
+	fi
+	if use png ; then
+		LINK_OPT+=" -lpng"
+	fi
+	if use X ; then
+		LINK_OPT+=" -lX11"
+	fi
+	sed -i '/shared/s/$/ '"${LINK_OPT}"'/' src/${MAKE_FILE}
 }
 
 src_compile() {
