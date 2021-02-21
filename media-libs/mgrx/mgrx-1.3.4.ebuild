@@ -92,7 +92,7 @@ src_configure() {
 	sed -i '/STRIP/d' src/${MAKE_FILE}  # remove strip processes, this should be done by emerge
 
 	# FIXME Add library linking info for a mgrx shared library
-	LINK_OPT=""
+	LINK_OPT=" -lm"
 	if use jpeg ; then
 		LINK_OPT+=" -ljpeg"
 	fi
