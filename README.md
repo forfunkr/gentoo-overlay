@@ -1,1 +1,1 @@
-Ebuilds I use
+gentoo overlay for personal use
