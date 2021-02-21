@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>kimmch@outlook.com</email>
+		<name>Myeongcheol Kim</name>
+	</maintainer>
+	<use>
+		<flag name="X">Add support for X11. If unset, use framebuffer instead.</flag>
+		<flag name="grgui">Build mgrx own gui library</flag>
+	</use>
+</pkgmetadata>
+
