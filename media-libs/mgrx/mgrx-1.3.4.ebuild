@@ -107,11 +107,7 @@ src_configure() {
 
 src_compile() {
 	cd src
-	if use X ; then
-		make -j$(makeopts_jobs) -f makefile.x11 || die
-	else
-		make -j$(makeopts_jobs) -f makefile.lnx || die
-	fi
+	make -j$(makeopts_jobs) -f ${MAKE_FILE} || die
 }
 
 src_install() {
