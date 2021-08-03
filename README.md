@@ -1,1 +1,1 @@
-gentoo overlay for personal use
+kulpw's gentoo overlay
