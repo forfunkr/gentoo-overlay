@@ -11,7 +11,7 @@ SRC_URI="https://github.com/Prince781/${PN}/releases/download/${PV}/${P}.tar.xz"
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+plugins"
+IUSE="plugins"
 
 DEPEND="
 	>=dev-lang/vala-0.48.12
